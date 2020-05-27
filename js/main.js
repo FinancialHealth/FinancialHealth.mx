@@ -9,7 +9,9 @@
       });
     }
   });
-
+  function enableBtn(){
+   document.getElementById("button1").disabled = false;
+ }
   // Back to top button
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
