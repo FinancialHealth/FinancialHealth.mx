@@ -741,29 +741,27 @@
             </div>
 
             <div class="form">
-              <div id="sendmessage">Su mensaje ha sido enviado exitosamente. Nos pondremos en contacto pronto!</div>
-              <div id="errormessage">Error</div>
-              <form action="https://formspree.io/mzbjzyzy" method="POST" role="form" class="contactForm">
+              <form id="my-form" action="https://formspree.io/mzbjzyzy" method="POST" role="form">
                 <div class="form-row">
                   <div class="form-group col-lg-6">
-                    <input type="text" name="Nombre" class="form-control" id="name" placeholder="Inserte su Nombre" data-rule="minlen:4" data-msg="Inserta al menos 4 caracteres" />
+                    <input type="text" name="Nombre" class="form-control" id="name" placeholder="Inserte su Nombre*" minlength="4" data-rule="minlen:4" data-msg="Inserta al menos 4 caracteres" required/>
                     <div class="validation"></div>
                   </div>
                   <div class="form-group col-lg-6">
-                    <input type="email" class="form-control" name="E-mail" id="email" placeholder="Inserte su Email" data-rule="email" data-msg="Inserte Email Válido" />
+                    <input type="email" class="form-control" name="E-mail" id="email" placeholder="Inserte su Email*" minlength="5" data-rule="email" data-msg="Inserte Email Válido" required/>
                     <div class="validation"></div>
                   </div>
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control" name="Asunto" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Asunto mínimo 4 caracteres" />
+                  <input type="text" class="form-control" name="Asunto" id="subject" placeholder="Asunto*" minlength="4" data-rule="minlen:4" data-msg="Asunto mínimo 4 caracteres" required/>
                   <div class="validation"></div>
                 </div>
                 <div class="form-group">
-                  <textarea class="form-control" name="Mensaje" rows="5" data-rule="required" data-msg="Escriba su Mensaje" placeholder="Message" data-rule="minlen:1" data-msg="Inserte Mensaje"></textarea>
+                  <textarea class="form-control" name="Mensaje" rows="5" data-rule="required" data-msg="Escriba su Mensaje" minlength="5" placeholder="Mensaje*" data-rule="minlen:1" data-msg="Inserte Mensaje"required></textarea>
                   <div class="validation"></div>
                 </div>
-                <div class="text-center"><button type="submit" class="g-recaptcha" data-sitekey="6LdDq_wUAAAAAH_yPI-aO89vDXuUlx3hffqi3fQB" title="Send Message">Submit1</button></div>
-                This site is protected by reCAPTCHA and the Google <a href=”https://policies.google.com/privacy”>Privacy Policy</a> and <a href=”https://policies.google.com/terms”>Terms of Service</a> apply.
+                <div class="text-center"><button id="my-form-button" type="submit" title="Send Message">Enviar</button></div>
+                <p id="my-form-status"></p>
               </form>
             </div>
           </div>
@@ -819,7 +817,7 @@
             <h4>Our Newsletter</h4>
             <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
             <form action="" method="post">
-              <input type="email" name="email"><input type="submit"  value="Subscribe">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
             </form>
           </div>
 
@@ -838,8 +836,8 @@
   </footer><!-- #footer -->
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-  <!-- Uncomment below i you want to use a preloader -->
-  <!-- <div id="preloader"></div> -->
+  <!-- Uncomment below if you want to use a preloader -->
+  <div id="preloader"></div>
 
   <!-- JavaScript Libraries -->
   <script src="lib/jquery/jquery.min.js"></script>
@@ -853,18 +851,61 @@
   <script src="lib/owlcarousel/owl.carousel.min.js"></script>
   <script src="lib/isotope/isotope.pkgd.min.js"></script>
   <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+
   <!-- Contact Form JavaScript File -->
   <script src="contactform/contactform.js"></script>
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
-
-  <!-- Captcha -->
+  
   <script>
-    function onSubmit(token) {
-      document.getElementById("form").submit();
+    window.addEventListener("DOMContentLoaded", function() {
+
+      // get the form elements defined in your form HTML above
+
+      var form = document.getElementById("my-form");
+      var button = document.getElementById("my-form-button");
+      var status = document.getElementById("my-form-status");
+
+      // Success and Error functions for after the form is submitted
+
+      function success() {
+        form.reset();
+        button.style = "display: none ";
+        status.innerHTML = "Gracias! Te contactaremos lo más pronto posible!";
+      }
+
+      function error() {
+        status.innerHTML = "Uy! Ocurrió un problema.";
+      }
+
+      // handle the form submission event
+
+      form.addEventListener("submit", function(ev) {
+        ev.preventDefault();
+        //e.stopImmediatePropagation();
+        var data = new FormData(form);
+        ajax(form.method, form.action, data, success, error);
+      });
+    });
+
+    // helper function for sending an AJAX request
+
+    function ajax(method, url, data, success, error) {
+      var xhr = new XMLHttpRequest();
+      xhr.open(method, url);
+      xhr.setRequestHeader("Accept", "application/json");
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState !== XMLHttpRequest.DONE) return;
+        if (xhr.status === 200) {
+          success(xhr.response, xhr.responseType);
+        } else {
+          error(xhr.status, xhr.response, xhr.responseType);
+        }
+      };
+      xhr.send(data);
     }
   </script>
-
 </body>
 </html>
