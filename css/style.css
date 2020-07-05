@@ -11,6 +11,7 @@ body {
   background: #fff;
   color: #444;
   font-family: "Open Sans", sans-serif;
+  font-display: swap;
 }
 
 a {
@@ -41,6 +42,7 @@ h6 {
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
+  font-display: swap;
 }
 
 /* Back to top button */
@@ -60,6 +62,7 @@ h6 {
   bottom: 15px;
   transition: background 0.5s;
   z-index: 11;
+  font-display: swap;
 }
 
 .back-to-top i {
@@ -146,6 +149,7 @@ h6 {
   font-weight: 400;
   letter-spacing: 3px;
   text-transform: uppercase;
+  font-display: swap;
 }
 
 #header .logo h1 a,
@@ -194,6 +198,7 @@ h6 {
   font-weight: 500;
   position: relative;
   z-index: 4;
+  font-display: swap;
 }
 
 #intro .intro-info h2 {
@@ -203,6 +208,7 @@ h6 {
   font-size: 4vw;
   font-weight: 700;
   z-index: 5;
+  font-display: swap;
 }
 #intro .intro-info h3 {
   color: #fff;
@@ -211,6 +217,7 @@ h6 {
   font-size: 2vw;
   font-weight: 150;
   z-index: 5;
+  font-display: swap;
 }
 
 #intro .intro-info h2 span {
@@ -230,6 +237,7 @@ h6 {
   transition: 0.5s;
   margin: 0 20px 20px 0;
   color: #fff;
+  font-display: swap;
 }
 
 #intro .intro-info .btn-get-started {
@@ -287,6 +295,7 @@ h6 {
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
+  font-display: swap;
 }
 
 .main-nav a:hover,
@@ -325,6 +334,7 @@ h6 {
   padding: 10px 20px;
   font-size: 13px;
   color: #660033;
+  font-display: swap;
 }
 
 .main-nav .drop-down ul a:hover,
@@ -337,6 +347,7 @@ h6 {
   content: "\f107";
   font-family: FontAwesome;
   padding-left: 10px;
+  font-display: swap;
 }
 
 .main-nav .drop-down .drop-down ul {
@@ -387,6 +398,7 @@ h6 {
   color: #fff;
   padding: 10px 20px;
   font-weight: 500;
+  font-display: swap;
 }
 
 .mobile-nav a:hover,
@@ -402,6 +414,7 @@ h6 {
   padding-left: 10px;
   position: absolute;
   right: 15px;
+  font-display: swap;
 }
 
 .mobile-nav .active.drop-down > a:after {
@@ -434,6 +447,7 @@ h6 {
   line-height: 1;
   cursor: pointer;
   text-align: right;
+  font-display: swap;
 }
 
 .mobile-nav-toggle i {
@@ -478,6 +492,7 @@ h6 {
   text-align: center;
   font-weight: 500;
   position: relative;
+  font-display: swap;
 }
 
 .section-header p {
@@ -516,6 +531,7 @@ h6 {
   color: #333;
   font-weight: 700;
   font-size: 32px;
+  font-display: swap;
 }
 
 #about .about-container p {
@@ -563,6 +579,7 @@ h6 {
 #about .about-container .icon-box .icon i {
   color: #800040;
   font-size: 24px;
+  font-display: swap;
 }
 
 #about .about-container .icon-box:hover .icon {
@@ -578,6 +595,7 @@ h6 {
   font-weight: 600;
   margin-bottom: 5px;
   font-size: 18px;
+  font-display: swap;
 }
 
 #about .about-container .icon-box .title a {
@@ -588,6 +606,7 @@ h6 {
   margin-left: 80px;
   line-height: 24px;
   font-size: 14px;
+  font-display: swap;
 }
 
 #about .about-extra {
@@ -597,6 +616,7 @@ h6 {
 #about .about-extra h4 {
   font-weight: 600;
   font-size: 24px;
+  font-display: swap;
 }
 
 /* Services Section
@@ -633,6 +653,7 @@ h6 {
   font-size: 64px;
   line-height: 1;
   transition: 0.5s;
+  font-display: swap;
 }
 
 #services .title {
@@ -640,6 +661,7 @@ h6 {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
+  font-display: swap;
 }
 
 #services .title a {
@@ -655,6 +677,7 @@ h6 {
   margin-left: 40px;
   line-height: 24px;
   margin-bottom: 0;
+  font-display: swap;
 }
 
 #why-us {
@@ -688,16 +711,19 @@ h6 {
   font-size: 48px;
   padding-top: 15px;
   color: #bfddfe;
+  font-display: swap;
 }
 
 #why-us .card h5 {
   font-size: 22px;
   font-weight: 600;
+  font-display: swap;
 }
 
 #why-us .card p {
   font-size: 15px;
   color: #d8eafe;
+  font-display: swap;
 }
 
 #why-us .card .readmore {
@@ -706,6 +732,7 @@ h6 {
   display: inline-block;
   transition: 0.3s ease-in-out;
   border-bottom: #800040 solid 2px;
+  font-display: swap;
 }
 
 #why-us .card .readmore:hover {
@@ -722,6 +749,7 @@ h6 {
   font-size: 48px;
   display: block;
   color: #fff;
+  font-display: swap;
 }
 
 #why-us .counters p {
@@ -730,6 +758,7 @@ h6 {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   color: #cce5ff;
+  font-display: swap;
 }
 
 /* Portfolio Section
@@ -760,6 +789,7 @@ h6 {
   background: #ecf5ff;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
+  font-display: swap;
 }
 
 #portfolio #portfolio-flters li:hover,
@@ -824,6 +854,7 @@ h6 {
   font-weight: 700;
   margin-bottom: 14px;
   padding-bottom: 0;
+  font-display: swap;
 }
 
 #portfolio .portfolio-item .portfolio-wrap .portfolio-info h4 a {
@@ -841,6 +872,7 @@ h6 {
   font-weight: 500;
   font-size: 14px;
   text-transform: uppercase;
+  font-display: swap;
 }
 
 #portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-preview,
@@ -860,6 +892,7 @@ h6 {
   padding-top: 6px;
   font-size: 22px;
   color: #fff;
+  font-display: swap;
 }
 
 #portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-preview:hover,
@@ -905,6 +938,7 @@ h6 {
   margin: 10px 0 5px 0;
   color: #111;
   margin-left: 140px;
+  font-display: swap;
 }
 
 #testimonials .testimonial-item h4 {
@@ -912,11 +946,13 @@ h6 {
   color: #999;
   margin: 0 0 15px 0;
   margin-left: 140px;
+  font-display: swap;
 }
 
 #testimonials .testimonial-item p {
   font-style: italic;
   margin: 0 0 15px 140px;
+  font-display: swap;
 }
 
 #testimonials .owl-nav,
@@ -998,6 +1034,7 @@ h6 {
   margin-bottom: 2px;
   font-size: 18px;
   color: #fff;
+  font-display: swap;
 }
 
 #team .member span {
@@ -1005,6 +1042,7 @@ h6 {
   display: block;
   font-size: 13px;
   color: #fff;
+  font-display: swap;
 }
 
 #team .member .social {
@@ -1023,6 +1061,7 @@ h6 {
 #team .member .social i {
   font-size: 18px;
   margin: 0 2px;
+  font-display: swap;
 }
 
 /* Clients Section
@@ -1092,6 +1131,7 @@ h6 {
   letter-spacing: 3px;
   text-transform: uppercase;
   color: #800040;
+  font-display: swap;
 }
 
 #contact .contact-about p {
@@ -1099,6 +1139,7 @@ h6 {
   line-height: 24px;
   font-family: "Montserrat", sans-serif;
   color: #888;
+  font-display: swap;
 }
 
 #contact .social-links {
@@ -1119,6 +1160,7 @@ h6 {
   height: 36px;
   transition: 0.3s;
   border: 1px solid #800040;
+  font-display: swap;
 }
 
 #contact .social-links a:hover {
@@ -1141,6 +1183,7 @@ h6 {
   padding: 0 0 10px 36px;
   line-height: 28px;
   font-size: 14px;
+  font-display: swap;
 }
 
 #contact .form #sendmessage {
@@ -1151,6 +1194,7 @@ h6 {
   padding: 15px;
   font-weight: 600;
   margin-bottom: 15px;
+  font-display: swap;
 }
 
 #contact .form #errormessage {
@@ -1161,6 +1205,7 @@ h6 {
   padding: 15px;
   font-weight: 600;
   margin-bottom: 15px;
+  font-display: swap;
 }
 
 #contact .form #sendmessage.show,
@@ -1175,6 +1220,7 @@ h6 {
   margin: 0 0 20px;
   font-weight: 400;
   font-size: 13px;
+  font-display: swap;
 }
 
 #contact .form input,
@@ -1182,6 +1228,7 @@ h6 {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
+  font-display: swap;
 }
 
 #contact .form button[type="submit"] {
@@ -1207,6 +1254,7 @@ h6 {
   padding: 0 0 30px 0;
   color: #eee;
   font-size: 14px;
+  font-display: swap;
 }
 
 #footer .footer-top {
@@ -1228,6 +1276,7 @@ h6 {
   font-weight: 400;
   letter-spacing: 3px;
   text-transform: uppercase;
+  font-display: swap;
 }
 
 #footer .footer-top .footer-info p {
@@ -1236,6 +1285,7 @@ h6 {
   margin-bottom: 0;
   font-family: "Montserrat", sans-serif;
   color: #ecf5ff;
+  font-display: swap;
 }
 
 #footer .footer-top .social-links a {
@@ -1251,6 +1301,7 @@ h6 {
   width: 36px;
   height: 36px;
   transition: 0.3s;
+  font-display: swap;
 }
 
 #footer .footer-top .social-links a:hover {
@@ -1265,6 +1316,7 @@ h6 {
   text-transform: uppercase;
   position: relative;
   padding-bottom: 10px;
+  font-display: swap;
 }
 
 #footer .footer-top .footer-links {
@@ -1335,6 +1387,7 @@ h6 {
   text-align: center;
   font-size: 13px;
   color: #f1f7ff;
+  font-display: swap;
 }
 
 #footer .credits a {
@@ -1401,6 +1454,7 @@ h6 {
   #intro .intro-info h2 {
     font-size: 34px;
     margin-bottom: 30px;
+    font-display: swap;
   }
 
   .section-header p {
