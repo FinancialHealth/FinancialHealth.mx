@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="utf-8">
   <title>Financial Health</title>
@@ -23,14 +23,14 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
 
   <!-- Bootstrap CSS File -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" async>
 
   <!-- Libraries CSS Files -->
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="lib/animate/animate.min.css" rel="stylesheet">
-  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <link rel="preload" href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" async>
+  <link href="lib/animate/animate.min.css" rel="stylesheet" async>
+  <link rel="preload" href="lib/ionicons/css/ionicons.min.css" rel="stylesheet" async>
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" async>
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" async>
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
@@ -728,7 +728,7 @@
             <div class="row">
               <div class="col-md-5 info">
                 <i class="ion-ios-location-outline"></i>
-                <p>A108 Adam Street, NY 535022</p>
+                <p>Ciudad Satélite Naulcalpan de Juárez, Estado de México CP. 53100</p>
               </div>
               <div class="col-md-4 info">
                 <i class="ion-ios-email-outline"></i>
@@ -760,6 +760,7 @@
                   <textarea class="form-control" name="Mensaje" rows="5" data-rule="required" data-msg="Escriba su Mensaje" minlength="5" placeholder="Mensaje*" data-rule="minlen:1" data-msg="Inserte Mensaje"required></textarea>
                   <div class="validation"></div>
                 </div>
+                <input type="text" name="_gotcha" style="display:none" />
                 <div class="text-center"><button id="my-form-button" type="submit" title="Send Message">Enviar</button></div>
                 <p id="my-form-status"></p>
               </form>
@@ -858,7 +859,7 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
-  
+
   <script>
     window.addEventListener("DOMContentLoaded", function() {
 
