@@ -171,7 +171,7 @@ h6 {
     padding: 12px 0;
 }
 #header .text-light {
-  color: #000!important;
+  color: #ffffff!important;
   text-decoration: none;
   font-family: latolight!important;
   font-size: 14px;
@@ -675,7 +675,7 @@ color: #ecf5ff;
 
 #services .icon {
   position: absolute;
-  left: -20px;
+  left: -24px;
   top: calc(50% - 32px);
   font-size: 64px;
   line-height: 1;
@@ -689,7 +689,11 @@ color: #ecf5ff;
   font-size: 18px;
 
 }
-
+#services .Others .h4 a{
+margin-bottom: 15px;
+color: #b30059;
+position: relative;
+}
 #services .title a {
   color: #111;
 }
@@ -761,7 +765,7 @@ color: #ecf5ff;
 
 #why-us .card p {
   font-size: 15px;
-  color: #d8eafe;
+  color: #fff;
 }
 
 #why-us .card .readmore{
@@ -795,7 +799,7 @@ color: #ecf5ff;
   margin: 0 0 20px 0;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
-  color: #cce5ff;
+  color: #fff;
 
 }
 

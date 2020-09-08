@@ -236,11 +236,19 @@ width: 1em;
   font-size: 30px;
   color: #b30059;
   line-height: 1.2;
-  text-align: center;
+  text-align: -webkit-center;
   padding-bottom: 33px;
 }
 
-
+.contact100-form-titles{
+	width: 100%;
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  color: #fff;
+  line-height: 1.2;
+  text-align: -webkit-center;
+  padding-bottom: 33px;}
 
 /*------------------------------------------------------------------
 [ Input ]*/
