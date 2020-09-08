@@ -64,7 +64,7 @@
 
         if ($('body').hasClass('mobile-nav-active')) {
           $('body').removeClass('mobile-nav-active');
-          $('.mobile-nav-toggle i').toggleClass('fa-times fa-bars');
+          $('.mobile-nav-toggle svg').toggleClass('fa-times fal fa-bars');
           $('.mobile-nav-overly').fadeOut();
         }
         return false;
@@ -162,7 +162,7 @@
 
 		});
 	});
-	
+
   //scroll header
   $(function() {
     $(window).on("scroll", function() {
