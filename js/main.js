@@ -164,7 +164,6 @@
 	});
 
   //scroll header
-  $(function() {
     $(window).on("scroll", function() {
         if($(window).scrollTop() > 50) {
             $(".header").addClass("active");
@@ -172,6 +171,16 @@
             //remove the background property so it comes transparent again (defined in your css)
            $(".header").removeClass("active");
         }
+
     });
-});
+
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 50) {
+        $('.text-light').fadeOut();
+      } else {
+        $('.text-light').fadeIn();
+      }
+    });
+
+
 })(jQuery);

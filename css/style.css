@@ -140,9 +140,6 @@ h6 {
   height: 60px;
   padding: 10px 0;
 }
-#header .text-light-scrolled{
-  visibility: hidden;
-}
 
 #header .logo h1 a{
   color: #000;
@@ -154,7 +151,10 @@ h6 {
   line-height: 1;
   font-weight: 400;
   letter-spacing: normal;
-  text-transform: uppercase;
+  text-transform: none;
+}
+#header .logo h1 a .active{
+  visibility: hidden;
 }
 
 #header .logo h1 a:hover {
@@ -180,7 +180,7 @@ h6 {
   line-height: 1;
   font-weight: 400;
   letter-spacing: normal;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .main-pages {
@@ -1468,7 +1468,7 @@ color: #ecf5ff;
     line-height: 1;
     font-weight: 400;
     letter-spacing: normal;
-    text-transform: uppercase;
+    text-transform: none;
   }
   #header .logo h1 {
     font-size: 14px;
