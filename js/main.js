@@ -97,6 +97,18 @@
     time: 1000
   });
 
+  // Porfolio2 isotope and filter
+  $(window).on('load', function () {
+    var portfolioIsotope = $('.portfolio2-container').isotope({
+      itemSelector: '.portfolio2-item'
+    });
+    $('#portfolio2-flters li').on( 'click', function() {
+      $("#portfolio2-flters li").removeClass('filter-active');
+      $(this).addClass('filter-active');
+
+      portfolioIsotope.isotope({ filter: $(this).data('filter') });
+    });
+  });
   // Porfolio isotope and filter
   $(window).on('load', function () {
     var portfolioIsotope = $('.portfolio-container').isotope({
@@ -109,7 +121,6 @@
       portfolioIsotope.isotope({ filter: $(this).data('filter') });
     });
   });
-
   // Testimonials carousel (uses the Owl Carousel library)
   $(".testimonials-carousel").owlCarousel({
     autoplay: true,
@@ -182,5 +193,15 @@
       }
     });
 
+    $(function(){
+        autoFill();
+
+        function autoFill() {
+          $('#auto-fill-link').click(function(){
+            $('#first-name').val('.data-product-name');
+          });
+
+        }
+      })
 
 })(jQuery);
