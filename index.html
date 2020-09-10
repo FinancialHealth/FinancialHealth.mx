@@ -83,7 +83,7 @@
         <ul>
           <li class="active"><a href="#intro">Inicio</a></li>
           <li><a href="#about">Nosotros</a></li>
-          <li><a href="#services">Servicios</a></li>
+          <li><a href="#portfolio2">Servicios</a></li>
           <li><a href="#why-us">¿Por qué elegirnos?</a></li>
           <li><a href="#clients">Aseguradoras</a></li>
           <li><a href="#contact">Contacto</a></li>
@@ -105,7 +105,7 @@
           <!--  <p>Los mejores Asesores en Seguros Personales, Familiares y Empresariales.</p>-->
         </h3>
         <div>
-          <a href="#services" class="btn-get-started scrollto">Áreas de Especialidad</a>
+          <a href="#portfolio2" class="btn-get-started scrollto">Áreas de Especialidad</a>
           <a href="#contact" class="btn-services scrollto">Contacto</a>
         </div>
       </div>
@@ -116,7 +116,7 @@
   </section><!-- #intro -->
 
   <main id="main">
-  <!--==========================
+    <!--==========================
   About Section
   ============================-->
     <section id="about">
@@ -144,18 +144,7 @@
           <h3>Áreas de Especialidad</h3>
         </header>
 
-        <div class="row">
-          <div class="col-lg-12">
-            <ul id="portfolio2-flters">
-              <li data-filter="*" class="filter-active">Todos</li>
-              <li data-filter=".filter-personales">Personales</li>
-              <li data-filter=".filter-empresariales">Empresariales</li>
-              <li data-filter=".filter-familiares">Familiares</li>
-              <li data-filter=".filter-escolares">Escolares</li>
-            </ul>
-          </div>
-        </div>
-
+        <span></span>
         <div class="row portfolio2-container">
 
           <div class="col-lg-4 col-md-6 portfolio2-item filter-personales">
@@ -219,6 +208,17 @@
                 <h4><a href="#contact" class="scrollto">Seguros de Gastos Médicos Menores</a></h4>
               </div>
             </div>
+          </div>
+
+
+
+
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-md">
+            <ul id="portfolio2-flters">
+            <a href="#contact" class="btn-services scrollto">Contacto</a>
+            </ul>
           </div>
         </div>
       </div>
@@ -394,73 +394,115 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-personales filter-familiares filter-empresariales" data-wow-delay="0.2s">
             <div class="portfolio-wrap">
-              <img src="img/portfolio/web2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#contact" class="scrollto">Equipo Electrónico</a></h4>
+              <img src="img/portfolio/web2.jpg" class="img-fluid" alt="" href="" onclick="return false;">
+              <div class="portfolio-info" data-toggle="modal" data-target="#centralModalInfo">
+                <h4><a href="" onclick="return false;">Equipo Electrónico</a></h4>
               </div>
             </div>
           </div>
         </div>
+        <div class="row">
+          <div class="col-lg-12 col-md">
+            <ul id="portfolio-flters">
+            <a href="#contact" class="btn-services scrollto">Contacto</a>
+            </ul>
+          </div>
+        </div>
       </div>
     </section><!-- #portfolio -->
+    <!--==========================
+    Modal popup
+    ============================-->
+    <div class="modal fade" id="centralModalInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-notify modal-info" role="document">
+        <!--Content-->
+        <div class="modal-content">
+          <!--Header-->
+          <div class="modal-header">
+            <p class="heading lead">Equipo Electrónico</p>
 
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true" class="white-text">&times;</span>
+            </button>
+          </div>
+
+          <!--Body-->
+          <div class="modal-body">
+            <div class="text-center">
+              <i class="fas fa-check fa-4x mb-3 animated rotateIn"></i>
+              <p>Protege todo tu equipo electrónico.</p>
+            </div>
+          </div>
+
+          <!--Footer-->
+          <div class="modal-footer justify-content-center">
+            <a href="#contact" type="button" class="btn btn-primary">Me interesa<i class="far fa-gem ml-1 text-white"></i></a>
+            <a type="button" class="btn btn-outline-primary waves-effect" data-dismiss="modal">No, Gracias</a>
+          </div>
+        </div>
+        <!--/.Content-->
+      </div>
+    </div>
+    <!-- Central Modal Medium Info-->
     <!--==========================
     Services 2 Section
     ============================-->
     <section id="services" class="section-bg">
       <div class="container">
-      <header class="section-header">
-        <h3>Servicio Exclusivo</h3>
-      </header>
-      <div class="row">
-        <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-duration="1.4s">
-          <div class="box">
-            <div class="icon"><i class="fal fa-umbrella" style="color: #484538;"></i></div>
-            <h4 class="title"><a href="" onclick="return false;">Propuestas de cobertura</a></h4>
-            <p class="description">De acuerdo a tu perfil y expectativas considerando diferentes opciones.</p>
+        <header class="section-header">
+          <h3>Servicio Exclusivo</h3>
+        </header>
+        <div class="row">
+          <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon"><i class="fal fa-umbrella" style="color: #484538;"></i></div>
+              <h4 class="title"><a href="" onclick="return false;">Propuestas de cobertura</a></h4>
+              <p class="description">De acuerdo a tu perfil y expectativas considerando diferentes opciones.</p>
+            </div>
           </div>
-        </div>
-        <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-duration="1.4s">
-          <div class="box">
-            <div class="icon"><i class="far fa-users-cog" style="color: #800040;"></i></div>
-            <h4 class="title"><a href="" onclick="return false;">Atención personalizada</a></h4>
-            <p class="description">Respondemos tus dudas en cualquier momento, guiándote antes, durante y después de la contratación de cada servicio o producto sin costo extra.</p>
-          </div>
-        </div>
 
-        <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-          <div class="box">
-            <div class="icon"><i class="fad fa-user-lock" style="color: #484538;"></i></div>
-            <h4 class="title"><a href="" onclick="return false;">Confidencialidad</a></h4>
-            <p class="description">Tus datos personales e información financiera se encontrarán siempre a salvo.</p>
+          <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon"><i class="far fa-users-cog" style="color: #800040;"></i></div>
+              <h4 class="title"><a href="" onclick="return false;">Atención personalizada</a></h4>
+              <p class="description">Respondemos tus dudas en cualquier momento, guiándote antes, durante y después de la contratación de cada servicio o producto sin costo extra.</p>
+            </div>
           </div>
-        </div>
 
-        <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-          <div class="box">
-            <div class="icon"><i class="fal fa-lock" style="color:#800040;"></i></div>
-            <h4 class="title"><a href="" onclick="return false;">Seguridad</a></h4>
-            <p class="description">Solo trabajamos con Instituciones Financieras reconocidas y autorizadas por la CNSF y la CNBV.</p>
+          <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon"><i class="fad fa-user-lock" style="color: #484538;"></i></div>
+              <h4 class="title"><a href="" onclick="return false;">Confidencialidad</a></h4>
+              <p class="description">Tus datos personales e información financiera se encontrarán siempre a salvo.</p>
+            </div>
           </div>
-        </div>
 
-        <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
-          <div class="box">
-            <div class="icon"><i class="fal fa-users-medical" style="color: #484538;"></i></div>
-            <h4 class="title"><a href="" onclick="return false;">Servicio</a></h4>
-            <p class="description">Programaremos reuniones presenciales o telefónicas para re-definir tu situación financiera brindándote continuamente la asesoría que requieras.</p>
+          <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon"><i class="fal fa-lock" style="color:#800040;"></i></div>
+              <h4 class="title"><a href="" onclick="return false;">Seguridad</a></h4>
+              <p class="description">Solo trabajamos con Instituciones Financieras reconocidas y autorizadas por la CNSF y la CNBV.</p>
+            </div>
           </div>
-        </div>
 
-        <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
-          <div class="box">
-            <div class="icon"><i class="fal fa-clock" style="color: #800040;"></i></div>
-            <h4 class="title"><a href="" onclick="return false;">Apoyo</a></h4>
-            <p class="description">Puedes contactarnos en todo momento.</p>
+          <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon"><i class="fal fa-users-medical" style="color: #484538;"></i></div>
+              <h4 class="title"><a href="" onclick="return false;">Servicio</a></h4>
+              <p class="description">Programaremos reuniones presenciales o telefónicas para re-definir tu situación financiera brindándote continuamente la asesoría que requieras.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon"><i class="fal fa-clock" style="color: #800040;"></i></div>
+              <h4 class="title"><a href="" onclick="return false;">Apoyo</a></h4>
+              <p class="description">Puedes contactarnos en todo momento.</p>
+            </div>
           </div>
         </div>
       </div>
-  </div>
     </section><!-- #services -->
 
     <!--==========================
@@ -476,7 +518,7 @@
           <div class="col-lg-4 mb-4">
             <div class="card wow bounceInUp">
               <div class="card-body">
-                <i class="fal fa-laptop-medical"></i>
+                <i class="fal fa-laptop-medical" style="color:#ddddddba;"></i>
                 <h5 class="card-title">Nuestro Sistema</h5>
                 <p class="card-text">Tenemos control óptimo en la administración de todas las pólizas de nuestros clientes, en cualquier momento puedes acceder a ella o te la podemos enviar.</p>
               </div>
@@ -486,7 +528,7 @@
           <div class="col-lg-4 mb-4">
             <div class="card wow bounceInUp">
               <div class="card-body">
-                <i class="fal fa-book-medical"></i>
+                <i class="fal fa-book-medical" style="color:#ddddddba;"></i>
                 <h5 class="card-title">Valores</h5>
                 <p class="card-text">Profesionalismo, honestidad, seguridad y confidencialidad.</p>
 
@@ -497,7 +539,7 @@
           <div class="col-lg-4 mb-4">
             <div class="card wow bounceInUp">
               <div class="card-body">
-                <i class="far fa-users-cog"></i>
+                <i class="far fa-users-cog" style="color:#ddddddba;"></i>
                 <h5 class="card-title">Servicio Personalizado</h5>
                 <p class="card-text">Renovaciones, trámites, explicación de beneficios a asegurados, programación de pagos, seguimiento a siniestros y todo lo necesario para que siempre cuentes con cobertura.</p>
 
@@ -508,7 +550,7 @@
           <div class="col-lg-4 mb-4">
             <div class="card wow bounceInUp">
               <div class="card-body">
-                <i class="fal fa-users"></i>
+                <i class="fal fa-users" style="color:#ddddddba;"></i>
                 <h5 class="card-title">Equipo</h5>
                 <p class="card-text">Si lo requieres, Te referiremos con profesionistas del área Económico, Administrativo, Legal, Contable, Fiscal, para que avances en cada uno de tus proyectos con la mejor asesoría.</p>
 
@@ -519,7 +561,7 @@
           <div class="col-lg-4 mb-4">
             <div class="card wow bounceInUp">
               <div class="card-body">
-                <i class="fas fa-desktop"></i>
+                <i class="fas fa-desktop" style="color:#ddddddba;"></i>
                 <h5 class="card-title">Plataforma Digital</h5>
                 <p class="card-text">Un solo lugar para: acceder a todas tus pólizas, notificarnos cambios, seguimiento de siniestros, tips y mucho más.</p>
 
@@ -904,7 +946,7 @@
             <ul>
               <li><a href="#">Inicio</a></li>
               <li><a href="#about">Nosotros</a></li>
-              <li><a href="#services">Servicios</a></li>
+              <li><a href="#portfolio2">Servicios</a></li>
               <li><a href="#" onclick="return false;">Terminos de Servicio</a></li>
               <li><a href="#" onclick="return false;">Política de Privacidad</a></li>
             </ul>

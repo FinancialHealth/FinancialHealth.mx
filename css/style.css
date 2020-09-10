@@ -211,6 +211,7 @@ h6 {
   opacity: 0.7;
   z-index: 3;
 }
+
 #intro .intro-info {
   width: 100%;
   text-align: center;
@@ -256,7 +257,6 @@ h6 {
   transition: 0.5s;
   margin: 0 20px 20px 0;
   color: #fff;
-
 }
 
 #intro .intro-info .btn-get-started {
@@ -530,7 +530,7 @@ color: #ecf5ff;
 --------------------------------*/
 
 .section-bg {
-  background: #ecf5ff;
+  background: #57494f3b;
 }
 
 /* About Us Section
@@ -753,7 +753,7 @@ position: relative;
 #why-us .card svg {
   font-size: 48px;
   padding-top: 15px;
-  color: #bfddfe;
+  color: #373a3d;
 }
 
 #why-us .card h5 {
@@ -826,7 +826,7 @@ position: relative;
   color: #800040;
   border-radius: 50px;
   text-transform: uppercase;
-  background: #ecf5ff;
+  background: #d8d5d6;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 
@@ -958,7 +958,30 @@ position: relative;
 #portfolio .portfolio-item .portfolio-wrap:hover .portfolio-info {
   opacity: 1;
 }
+#portfolio  .btn-get-started,
+#portfolio  .btn-services {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 0 20px 20px 0;
+  color: #fff;
+  text-align: center;
+}
 
+#portfolio  .btn-services {
+  border: 2px solid #800040;
+}
+
+#portfolio  .btn-services:hover {
+  background: #800040;
+  border-color: #800040;
+  color: #fff;
+}
 /* portfolio2 Section
 --------------------------------*/
 
@@ -977,19 +1000,19 @@ position: relative;
 
 }
 
-#portfolio2 #portfolio2-flters li {
-  cursor: pointer;
-  margin: 15px 15px 15px 0;
+#portfolio  .btn-get-started,
+#portfolio  .btn-services {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
   display: inline-block;
-  padding: 6px 20px;
-  font-size: 12px;
-  line-height: 20px;
-  color: #800040;
+  padding: 10px 32px;
   border-radius: 50px;
-  text-transform: uppercase;
-  background: #ecf5ff;
-  margin-bottom: 5px;
-  transition: all 0.3s ease-in-out;
+  transition: 0.5s;
+  margin: 0 20px 20px 0;
+  color: #800040;
+  text-align: center;
 
 }
 
@@ -1122,6 +1145,56 @@ position: relative;
   opacity: 1;
 }
 
+#portfolio2  .btn-get-started,
+#portfolio2  .btn-services {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 0 20px 20px 0;
+  color: #800040;
+  text-align: center;
+
+}
+
+#portfolio2  .btn-get-started {
+  background: #800040;
+  border: 2px solid #800040;
+  color: #fff;
+}
+
+#portfolio2  .btn-get-started:hover {
+  background: none;
+  border-color: #fff;
+  color: #fff;
+}
+
+#portfolio2  .btn-services {
+  border: 2px solid #800040;
+}
+
+#portfolio2  .btn-services:hover {
+  background: #800040;
+  border-color: #800040;
+  color: #fff;
+}
+
+#portfolio2 .btn-primary {
+    color: #fff;
+    background-color: #c5c9cd1f;
+    border-color: #c5c9cd1f;
+}
+#portfolio2 .btn-primary:hover {
+    color: #fff;
+    background-color: #c5c9cd1f;
+    border-color: #c5c9cd1f;
+}
+
+
 /* Testimonials Section
 --------------------------------*/
 
@@ -1145,7 +1218,7 @@ position: relative;
   font-size: 20px;
   font-weight: bold;
   margin: 10px 0 5px 0;
-  color: #111;
+  color: #4d0031;
   margin-left: 140px;
 
 }
