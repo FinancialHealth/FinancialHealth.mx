@@ -1003,7 +1003,7 @@ position: relative;
 #portfolio  .btn-get-started,
 #portfolio  .btn-services {
   font-family: "Montserrat", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   letter-spacing: 1px;
   display: inline-block;
@@ -1082,7 +1082,7 @@ position: relative;
 }
 
 #portfolio2 .portfolio2-item .portfolio2-wrap .portfolio2-info h4 a {
-  font-size: 22px;
+  font-size: 18px;
   color: #fff;
 }
 
@@ -1148,7 +1148,7 @@ position: relative;
 #portfolio2  .btn-get-started,
 #portfolio2  .btn-services {
   font-family: "Montserrat", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   letter-spacing: 1px;
   display: inline-block;
@@ -1785,6 +1785,7 @@ position: relative;
 }
 
 @media (max-width: 574px) {
+
   #header .logo img {
     padding: 8px;
     margin: -13px 25px;
