@@ -843,8 +843,6 @@
       <div class="container-contact100 wow fadeInUp">
         <div class="wrap-contact100">
           <form class="contact100-form validate-form" id="my-form" action="https://formspree.io/mzbjzyzy" method="POST" role="form">
-            <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
-            <input type="hidden" name="action" value="validate_captcha">
             <span class="contact100-form-title">
               Contáctanos
             </span>
@@ -875,12 +873,14 @@
             <div class="wrap-input100 validate-input" data-validate="Es requerido un Mensaje">
               <textarea id="message" class="input100" name="message" placeholder="Escríbenos un Mensaje"></textarea>
               <span class="focus-input100"></span>
-              <label class="label-input100"><small>This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy">Privacy Policy</a> and<a href="https://policies.google.com/terms"> Terms of Service</a> apply.</small></label>
             </div>
 
             <div class="container-contact100-form-btn">
-              <button class="contact100-form-btn g-recaptcha" data-callback='onSubmit' data-sitekey="6Lf58coZAAAAAMHlMml6MhyHK8pLz9hetUeyc_ze">
-                Enviar Mensaje</a>
+              <div class="g-recaptcha" data-sitekey="6LdCr_wUAAAAACiVMdhnQIF1UedvR66fwz4gavmF"></div>
+            </div>
+            <div class="container-contact100-form-btn">
+              <button class="contact100-form-btn">
+                Enviar Mensaje
               </button>
             </div>
             <input type="text" name="_gotcha" style="display:none" />
@@ -1036,11 +1036,7 @@
   <script src="lib/isotope/isotope.pkgd.min.js"></script>
   <script src="lib/lightbox/js/lightbox.min.js"></script>
   <script src="https://www.google.com/recaptcha/api.js"></script>
-  <script>
-    function onSubmit(token) {
-      document.getElementById("my-form").submit();
-    }
-  </script>
+
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
