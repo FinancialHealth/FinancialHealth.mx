@@ -2226,6 +2226,16 @@ textarea.input100 {
     margin: 0;
   }
 }
+.small, small a{
+    font-size: 9px;
+    font-weight: 400;
+    color: #555555
+}
+.small a{
+   font-size: 12px;
+   color: #555555
+}
+.grecaptcha-badge { visibility: hidden; }
 @media (max-width: 768px) {
   .back-to-top {
     bottom: 15px;

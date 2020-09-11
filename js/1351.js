@@ -1,6 +1,6 @@
 window.FontAwesomeKitConfig = {
   "asyncLoading": {
-    "enabled": false
+    "enabled": true
   },
   "autoA11y": {
     "enabled": true
