@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
@@ -19,32 +19,31 @@
   <link rel="apple-touch-icon" sizes="120x120" href="img/apple-touch-icon.png">
   <link rel="apple-touch-icon" sizes="76x76" href="img/apple-touch-icon.png">
   <link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icon.png">
-
   <!-- Google Fonts -->
 
-  <link rel="preload stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700&display=swap" rel="stylesheet" defer>
+  <link rel="preload stylesheet" as="style"href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700&display=swap" rel="stylesheet" defer>
+
   <!-- Bootstrap CSS File -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="preload stylesheet" as="style" async>
+  <link rel="preload stylesheet" as="style" href="lib/bootstrap/css/bootstrap.min.css" async>
 
   <!-- Libraries CSS Files -->
-  <link rel="preload stylesheet" href="fonts/Lato/stylesheet.css" async>
-  <link rel="preload stylesheet" href="lib/font-awesome/css/font-awesome.min.css" async>
+  <link rel="preload stylesheet" as="style" href="fonts/Lato/stylesheet.css" async>
+  <link rel="preload stylesheet" as="style" href="lib/font-awesome/css/font-awesome.min.css" async>
   <link rel="preload stylesheet" as="style" href="lib/animate/animate.min.css" async>
   <link rel="preload stylesheet" as="style" href="lib/owlcarousel/assets/owl.carousel.min.css" async>
   <link rel="preload stylesheet" as="style" href="lib/lightbox/css/lightbox.min.css" async>
-
   <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="preload stylesheet" as="style" async>
+  <link rel="preload stylesheet" as="style" href="css/style.css" async>
   <!--Contact Form Libraries -->
   <!--===============================================================================================-->
-  <link rel="preload stylesheet" type="text/css" href="ContactForm/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="preload stylesheet" as="style" type="text/css" href="ContactForm/vendor/bootstrap/css/bootstrap.min.css" async>
   <!--===============================================================================================-->
-  <link rel="preload stylesheet" type="text/css" href="ContactForm/vendor/animate/animate.css">
+  <link rel="preload stylesheet" as="style" type="text/css" href="ContactForm/vendor/animate/animate.css" async>
   <!--===============================================================================================-->
-  <link rel="preload stylesheet" type="text/css" href="ContactForm/vendor/select2/select2.min.css">
+  <link rel="preload stylesheet" as="style" type="text/css" href="ContactForm/vendor/select2/select2.min.css" async>
   <!--===============================================================================================-->
-  <link rel="preload stylesheet" type="text/css" href="ContactForm/css/util.css">
-  <link rel="preload stylesheet" type="text/css" href="ContactForm/css/main.css">
+  <link rel="preload stylesheet" as="style" type="text/css" href="ContactForm/css/util.css" async>
+  <link rel="preload stylesheet" as="style" type="text/css" href="ContactForm/css/main.css" async>
   <!--===============================================================================================-->
 
   <!-- Awesome Fonts JS -->
@@ -81,7 +80,12 @@
         <ul>
           <li class="active"><a href="#intro">Inicio</a></li>
           <li><a href="#about">Nosotros</a></li>
-          <li><a href="#portfolio2">Servicios</a></li>
+          <li class="drop-down"><a href="" onclick="return false;">Servicios</a>
+            <ul>
+              <li><a href="#portfolio2">Áreas de Especialidad</a></li>
+              <li><a href="#portfolio">+ Seguros</a></li>
+              <li><a href="#services">Servicios Exclusivos</a></li>
+            </ul>
           <li><a href="#why-us">¿Por qué elegirnos?</a></li>
           <li><a href="#clients">Aseguradoras</a></li>
           <li><a href="#contact">Contacto</a></li>
@@ -150,7 +154,7 @@
             <div class="portfolio2-wrap">
               <img src="img/portfolio/retiro.jpg" class="img-fluid" alt="" href="" onclick="return false;">
               <div class="portfolio2-info" data-toggle="modal" data-target="#centralModalInfo">
-                <h4><a href="" onclick="return false;">Plan de Ahorro para Estudios Universitarios</a></h4>
+                <h4><a href="" onclick="return false;">Plan de Retiro</a></h4>
               </div>
             </div>
           </div>
@@ -177,7 +181,7 @@
             <div class="portfolio2-wrap">
               <img src="img/portfolio/hombre-clave.jpg" class="img-fluid" alt="" href="" onclick="return false;">
               <div class="portfolio2-info" data-toggle="modal" data-target="#centralModalInfo">
-                <h4><a href="" onclick="return false;">Hombre Clave</a></h4>
+                <h4><a href="" onclick="return false;" class="data-title">Hombre Clave</a></h4>
               </div>
             </div>
           </div>
@@ -227,9 +231,7 @@
     <div class="modal fade" id="centralModalInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
       aria-hidden="true">
       <div class="modal-dialog modal-notify modal-info" role="document">
-        <!--Content-->
         <div class="modal-content">
-          <!--Header-->
           <div class="modal-header">
             <p class="heading lead">Equipo Electrónico</p>
 
@@ -238,7 +240,6 @@
             </button>
           </div>
 
-          <!--Body-->
           <div class="modal-body">
             <div class="text-center">
               <i class="fas fa-check fa-4x mb-3 animated rotateIn"></i>
@@ -246,10 +247,9 @@
             </div>
           </div>
 
-          <!--Footer-->
           <div class="modal-footer justify-content-center">
-            <a type="button" class="btn btn-primary" onclick="location.href='#contact';" data-dismiss="modal">Me interesa<i class="far fa-gem ml-1 text-white"></i></a>
-            <a type="button" class="btn btn-outline-primary waves-effect" data-dismiss="modal">No, Gracias</a>
+            <a type="button" class="btn btn-get-started" onclick="location.href='#contact';" data-dismiss="modal">Me interesa<i class="far fa-gem ml-1 text-white"></i></a>
+            <a type="button" class="btn btn-services waves-effect" data-dismiss="modal">No, Gracias</a>
           </div>
         </div><!--/.Content-->
       </div>
@@ -281,9 +281,20 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-personales filter-familiares">
             <div class="portfolio-wrap">
+              <img src="img/portfolio/auto.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="" onclick="return false;" class="scrollto">Automóvil</a></h4>
+                <p><a href="" onclick="return false;" class="scrollto">Aquí va un texto de 10 palabras máximo para que se vea cool osi osi</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-personales filter-familiares">
+            <div class="portfolio-wrap">
               <img src="img/portfolio/civil.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4><a href="#contact" class="scrollto">Responsabilidad Civil Profesional</a></h4>
+                <h4><a href="" onclick="return false;" class="scrollto">Responsabilidad Civil Profesional</a></h4>
+                <p><a href="" onclick="return false;" class="scrollto">Aquí va un texto de 10 palabras máximo para que se vea cool osi osi</a></p>
               </div>
             </div>
           </div>
@@ -292,7 +303,8 @@
             <div class="portfolio-wrap">
               <img src="img/portfolio/life.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4><a href="#contact" class="scrollto">Vida</a></h4>
+                <h4><a href="" onclick="return false;" class="scrollto">Vida</a></h4>
+                <p><a href="" onclick="return false;" class="scrollto">Aquí va un texto de 10 palabras máximo para que se vea cool osi osi</a></p>
               </div>
             </div>
           </div>
@@ -301,7 +313,8 @@
             <div class="portfolio-wrap">
               <img src="img/portfolio/escuela.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4><a href="#contact" class="scrollto">Instalaciones Educativas</a></h4>
+                <h4><a href="" onclick="return false;" class="scrollto">Instalaciones Educativas</a></h4>
+                <p><a href="" onclick="return false;" class="scrollto">Aquí va un texto de 10 palabras máximo para que se vea cool osi osi</a></p>
               </div>
             </div>
           </div>
@@ -310,7 +323,8 @@
             <div class="portfolio-wrap">
               <img src="img/portfolio/transportemercancia.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4><a href="#contact" class="scrollto">Transporte de Mercancias</a></h4>
+                <h4><a href="" onclick="return false;" class="scrollto">Transporte de Mercancias</a></h4>
+                <p><a href="" onclick="return false;" class="scrollto">Aquí va un texto de 10 palabras máximo para que se vea cool osi osi</a></p>
               </div>
             </div>
           </div>
@@ -319,7 +333,8 @@
             <div class="portfolio-wrap">
               <img src="img/portfolio/house.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4><a href="#contact" class="scrollto">Hogar</a></h4>
+                <h4><a href="" onclick="return false;" class="scrollto">Hogar</a></h4>
+                <p><a href="" onclick="return false;" class="scrollto">Aquí va un texto de 10 palabras máximo para que se vea cool osi osi</a></p>
               </div>
             </div>
           </div>
@@ -328,7 +343,8 @@
             <div class="portfolio-wrap">
               <img src="img/portfolio/commerce.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4><a href="#contact" class="scrollto">Comercio</a></h4>
+                <h4><a href="" onclick="return false;" class="scrollto">Comercio</a></h4>
+                <p><a href="" onclick="return false;" class="scrollto">Aquí va un texto de 10 palabras máximo para que se vea cool osi osi</a></p>
               </div>
             </div>
           </div>
@@ -337,25 +353,29 @@
             <div class="portfolio-wrap">
               <img src="img/portfolio/industrial-ship.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4><a href="#contact" class="scrollto">Nave Industrial</a></h4>
+                <h4><a href="" onclick="return false;" class="scrollto">Nave Industrial</a></h4>
+                <p><a href="" onclick="return false;" class="scrollto">Aquí va un texto de 10 palabras máximo para que se vea cool osi osi</a></p>
               </div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-personales filter-familiares filter-empresariales" data-wow-delay="0.2s">
             <div class="portfolio-wrap">
-              <img src="img/portfolio/computer.jpg" class="img-fluid" alt="" href="" onclick="return false;">
-              <div class="portfolio-info" data-toggle="modal" data-target="#centralModalInfo">
-                <h4><a href="" onclick="return false;">Equipo Electrónico</a></h4>
+              <img src="img/portfolio/computer.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="" onclick="return false;" class="scrollto">Equipo Electrónico</a></h4>
+                <p><a href="" onclick="return false;" class="scrollto">Aquí va un texto de 10 palabras máximo para que se vea cool osi osi</a></p>
+
               </div>
             </div>
           </div>
-
           <div class="col-lg-4 col-md-6 portfolio-item filter-empresariales" data-wow-delay="0.2s">
             <div class="portfolio-wrap">
               <img src="img/portfolio/maquinaria.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4><a href="#contact" class="scrollto">Maquinaria</a></h4>
+                <h4><a href="" onclick="return false;" class="scrollto">Maquinaria</a></h4>
+                <p><a href="" onclick="return false;" class="scrollto">Aquí va un texto de 10 palabras máximo para que se vea cool osi osi</a></p>
+
               </div>
             </div>
           </div>
@@ -364,7 +384,9 @@
             <div class="portfolio-wrap">
               <img src="img/portfolio/custody.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4><a href="#contact" class="scrollto">Mercancia y Materia Prima en Custodia</a></h4>
+                <h4><a href="" onclick="return false;" class="scrollto">Mercancia y Materia Prima en Custodia</a></h4>
+                <p><a href="" onclick="return false;" class="scrollto">Aquí va un texto de 10 palabras máximo para que se vea cool osi osi</a></p>
+
               </div>
             </div>
           </div>
@@ -373,7 +395,9 @@
             <div class="portfolio-wrap">
               <img src="img/portfolio/civilwork.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4><a href="#contact" class="scrollto">Obra Civil</a></h4>
+                <h4><a href="" onclick="return false;" class="scrollto">Obra Civil</a></h4>
+                <p><a href="" onclick="return false;" class="scrollto">Aquí va un texto de 10 palabras máximo para que se vea cool osi osi</a></p>
+
               </div>
             </div>
           </div>
@@ -382,7 +406,9 @@
             <div class="portfolio-wrap">
               <img src="img/portfolio/orfandad.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4><a href="#contact" class="scrollto">Orfandad</a></h4>
+                <h4><a href="" onclick="return false;" class="scrollto">Orfandad</a></h4>
+                <p><a href="" onclick="return false;" class="scrollto">Aquí va un texto de 10 palabras máximo para que se vea cool osi osi</a></p>
+
               </div>
             </div>
           </div>
@@ -391,7 +417,9 @@
             <div class="portfolio-wrap">
               <img src="img/portfolio/art.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4><a href="#contact" class="scrollto">Objetos Valiosos y Arte</a></h4>
+                <h4><a href="" onclick="return false;" class="scrollto">Objetos Valiosos y Arte</a></h4>
+                <p><a href="" onclick="return false;" class="scrollto">Aquí va un texto de 10 palabras máximo para que se vea cool osi osi</a></p>
+
               </div>
             </div>
           </div>
@@ -400,7 +428,9 @@
             <div class="portfolio-wrap">
               <img src="img/portfolio/journey.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4><a href="#contact" class="scrollto">Viajes</a></h4>
+                <h4><a href="" onclick="return false;" class="scrollto">Viajes</a></h4>
+                <p><a href="" onclick="return false;" class="scrollto">Aquí va un texto de 10 palabras máximo para que se vea cool osi osi</a></p>
+
               </div>
             </div>
           </div>
@@ -409,7 +439,9 @@
             <div class="portfolio-wrap">
               <img src="img/portfolio/accident.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4><a href="#contact" class="scrollto">Accidentes</a></h4>
+                <h4><a href="" onclick="return false;" class="scrollto">Accidentes</a></h4>
+                <p><a href="" onclick="return false;" class="scrollto">Aquí va un texto de 10 palabras máximo para que se vea cool osi osi</a></p>
+
               </div>
             </div>
           </div>
@@ -418,7 +450,9 @@
             <div class="portfolio-wrap">
               <img src="img/portfolio/inmuebles.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4><a href="#contact" class="scrollto">Bienes Inmuebles y contenidos</a></h4>
+                <h4><a href="" onclick="return false;" class="scrollto">Bienes Inmuebles y contenidos</a></h4>
+                <p><a href="" onclick="return false;" class="scrollto">Aquí va un texto de 10 palabras máximo para que se vea cool osi osi</a></p>
+
               </div>
             </div>
           </div>
@@ -427,7 +461,9 @@
             <div class="portfolio-wrap">
               <img src="img/portfolio/transporteescolar.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4><a href="#contact" class="scrollto">Transporte Escolar</a></h4>
+                <h4><a href="" onclick="return false;" class="scrollto">Transporte Escolar</a></h4>
+                <p><a href="" onclick="return false;" class="scrollto">Aquí va un texto de 10 palabras máximo para que se vea cool osi osi</a></p>
+
               </div>
             </div>
           </div>
@@ -501,7 +537,7 @@
           </div>
         </div>
       </div>
-    </section><!-- #services -->
+    </section><!-- #Exclusive services-->
 
     <!--==========================
       Why Us Section
@@ -737,7 +773,7 @@
     </section><!-- #team -->
 
     <!--==========================
-    Clients Section
+    Insurances Section
     ============================-->
     <section id="clients" class="section-bg">
       <div class="container">
@@ -798,7 +834,7 @@
 
         </div>
       </div>
-    </section>
+    </section><!--#clients-->
 
     <!--==========================
     Contact Section
@@ -935,7 +971,7 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-4 col-md-6 footer-info">
+          <div class="col-lg-4 col-md-8 footer-info">
             <h3>Financial Health</h3>
           </div>
 
@@ -966,16 +1002,6 @@
             </div>
 
           </div>
-          <!-- Newsletter -->
-          <!--
-        <div class="col-lg-3 col-md-6 footer-newsletter">
-        <h4>Newsletter</h4>
-        <p></p>
-        <form action="" method="post">
-        <input type="email" name="email"><input type="submit" value="Subscribe">
-        </form>
-        </div>
-        -->
         </div>
       </div>
     </div>
@@ -985,7 +1011,7 @@
         &copy; Copyright 2020 <strong>Financial Health</strong>. All Rights Reserved
       </div>
       <div class="credits">
-        Designed by <a href="https://adrianromo.me/">Adrian Romo</a>
+        Designed with <i class="fas fa-heart"></i> by <a href="https://adrianromo.me/">Adrian Romo</a>
       </div>
     </div>
   </footer><!-- #footer -->
@@ -1016,14 +1042,10 @@
   <script src="js/main.js"></script>
 
   <!-- Contact Form Libraries -->
-  <!--===============================================================================================-->
   <script src="ContactForm/vendor/jquery/jquery-3.2.1.min.js"></script>
-  <!--===============================================================================================-->
   <script src="ContactForm/vendor/animsition/js/animsition.min.js"></script>
-  <!--===============================================================================================-->
   <script src="ContactForm/vendor/bootstrap/js/popper.js"></script>
   <script src="ContactForm/vendor/bootstrap/js/bootstrap.min.js"></script>
-  <!--===============================================================================================-->
   <script src="ContactForm/vendor/select2/select2.min.js"></script>
   <script>
     $(".selection-2").select2({
@@ -1031,15 +1053,11 @@
       dropdownParent: $('#dropDownSelect1')
     });
   </script>
-  <!--===============================================================================================-->
   <script src="ContactForm/vendor/daterangepicker/moment.min.js"></script>
   <script src="ContactForm/vendor/daterangepicker/daterangepicker.js"></script>
-  <!--===============================================================================================-->
   <script src="ContactForm/vendor/countdowntime/countdowntime.js"></script>
-  <!--===============================================================================================-->
   <script src="ContactForm/js/main.js"></script>
 
-  <!-- Some Javascript Tests -->
 </body>
 
 </html>

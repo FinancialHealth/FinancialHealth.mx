@@ -184,6 +184,11 @@
         }
 
     });
+    $(".modal").on('click', function(){
+        $("#modal-header").text(
+            $(this).attr("data-title")
+        );
+    })
 
     $(window).scroll(function() {
       if ($(this).scrollTop() > 50) {
@@ -203,5 +208,7 @@
 
         }
       })
+
+      
 
 })(jQuery);

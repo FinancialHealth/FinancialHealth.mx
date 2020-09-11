@@ -1,14 +1,15 @@
 # FinancialHealth.mx
 READY
-Fixed Button in "Areas de Especialidad"
-Added buttons in modals scrollto Contact
-Fixed Button in "Seguros"
-Added Modals in "Areas de Especialidad"
-
+Added Hover text in all images on "Seguros"
+Changed Nav-mobile to Right
+Optimized stylesheets
+Optimized images
+Changed Header with a Dropdown
 
 TODO:
-Add Hover text in all images on "Seguros"
-Change images on "Areas de Especialidad" "Seguros"
+Add Text for "Seguros"
+Add Function to read text in modals
+Add Text for Modals in "Why us"
 Add professions in Testimonials
 Add Merkurius photo in Team
 Add onsubmit verification in forms
