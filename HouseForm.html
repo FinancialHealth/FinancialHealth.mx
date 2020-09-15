@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Formulario Para Cotizar Póliza De Casa Línea HABITT</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <style>
+    html, body {
+      min-height: 100%;
+      }
+      body, div, form, input, select, p {
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 14px;
+      color: #666;
+      line-height: 22px;
+      }
+      h1 {
+      position: absolute;
+      margin: 0;
+      font-size: 36px;
+      color: #fff;
+      z-index: 2;
+      }
+      span.required {
+      color: red;
+      }
+      .testbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: inherit;
+      padding: 20px;
+      }
+      form {
+      width: 100%;
+      padding: 20px;
+      border-radius: 6px;
+      background: #fff;
+      box-shadow: 0 0 30px 0 #666;
+      }
+      .banner {
+      position: relative;
+      height: 180px;
+      background-image: url("House.jpg");
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      }
+      .banner::after {
+      content: "";
+      background-color: rgba(0, 0, 0, 0.4);
+      position: flex;
+      width: 100%;
+      height: 100%;
+      }
+      p.top-info {
+      margin: 10px 0;
+      }
+      input, select {
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      }
+      input {
+      width: calc(100% - 10px);
+      padding: 5px;
+      }
+      select {
+      width: 100%;
+      padding: 7px 0;
+      background: transparent;
+      }
+      .item:hover p, .question:hover p, .question label:hover, input:hover::placeholder {
+      color: #4d0031;
+      }
+      .item input:hover, .item select:hover {
+      border: 1px solid transparent;
+      box-shadow: 0 0 5px 0 #800040;
+      color: #800040;
+      }
+      .item {
+      position: relative;
+      margin: 10px 0;
+      }
+      .question input {
+      width: auto;
+      margin: 0;
+      border-radius: 50%;
+      }
+      .question input, .question span {
+      vertical-align: middle;
+      }
+      .question label {
+      display: inline-block;
+      margin: 5px 20px 15px 0;
+      }
+      .btn-block {
+      margin-top: 10px;
+      text-align: center;
+      }
+      button {
+      width: 150px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background: #800040;
+
+      font-size: 16px;
+      color: #fff;
+      cursor: pointer;
+      }
+      button:hover {
+      background: #333333;
+      }
+      @media (min-width: 568px) {
+      .name-item, .city-item {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      }
+      .name-item input, .city-item input {
+      width: calc(50% - 20px);
+      }
+      .city-item select {
+      width: calc(50% - 8px);
+      }
+      }
+    </style>
+</head>
+
+<body>
+  <div class="testbox">
+    <form action="https://formspree.io/mnqoadgz" method="POST">
+      <div class="banner">
+        <h1>Formulario Para Cotizar Póliza De Casa Línea HABITT</h1>
+      </div>
+      <div class="item">
+        <p>Nombre del Contratante / Propietario:<span class="required">*</span></p>
+        <div class="name-item">
+          <input type="text" name="Nombre" placeholder="Nombre(s)" required />
+          <input type="text" name="Apellidos" placeholder="Apellidos" required />
+        </div>
+      </div>
+      <div class="item">
+        <p>Dirección del Inmueble<span class="required">*</span></p>
+        <div class="city-item">
+          <input type="text" name="Ciudad" placeholder="Ciudad" required />
+          <input type="text" name="Municipio" placeholder="Municipio" required />
+          <input type="text" name="C.P." placeholder="Código Postal" required />
+        </div>
+      </div>
+      <div class="question">
+        <p>Tipo de construcción <span class="required">*</span></p>
+        <div class="question-answer">
+          <label><input type="radio" value="Muros y Techos Macizos" name="Construcción" required /> <span>Muros y Techos Macizos</span></label>
+          <label><input type="radio" value="Muros Macizos y otro tipo de techo" name="Construcción" required /> <span>Muros Macizos y otro tipo de techo</span></label>
+          <label><input type="radio" value="Muros y techos de otro material" name="Construcción" required /> <span>Muros y techos de otro material</span></label>
+
+        </div>
+      </div>
+      <div class="item">
+        <p>Año de Construcción <span class="required">*</span></p>
+        <input type="text" name="Año Construcción" />
+      </div>
+      <div class="item">
+        <p>Año de Refuerzo <span class="required">*</span></p>
+        <input type="text" name="Año de Refuerzo" required />
+      </div>
+      <div class="item">
+        <p>Porcentaje de Cristales <span class="required">*</span></p>
+        <select id="Porcentaje">
+          <option value="">Seleccione</option>
+          <option value="0">0%</option>
+          <option value="10">10%</option>
+          <option value="20">20%</option>
+          <option value="30">30%</option>
+          <option value="40">40%</option>
+          <option value="50">50%</option>
+          <option value="60">60%</option>
+          <option value="70">70%</option>
+          <option value="80">80%</option>
+          <option value="90">90%</option>
+          <option value="100">100%</option>
+        </select>
+      </div>
+      <div class="question">
+        <p>Número de Niveles del Edificio o Casa<span class="required">*</span></p>
+        <input type="text" name="Número de Niveles" required />
+      </div>
+      <div class="item">
+        <p>¿En qué piso vive? <span class="required">*</span></p>
+        <input type="text" name="¿En Qué Piso vive?" placeholder="Piso" required />
+      </div>
+      <div class="question">
+        <p>Tipo de Casa <span class="required">*</span></p>
+        <div class="question-answer">
+          <label><input type="radio" value="Casa Habitación" name="Tipo de Casa" required /> <span>Casa Habitación </span></label>
+          <label><input type="radio" value="Departamento" name="Tipo de Casa" required /> <span>Departamento</span></label>
+        </div>
+      </div>
+      <div class="item">
+        <p>Valor del Inmueble<span class="required">*</span></p>
+        <div class="name-item">
+          <input type="text" name="Valor del Inmueble" placeholder="$" required />
+        </div>
+        <div class="question">
+          <p>Tipo de Moneda <span class="required">*</span></p>
+          <div class="question-answer">
+            <label><input type="radio" value="Moneda Nacional" name="Divisa" required /> <span>Moneda Nacional </span></label>
+            <label><input type="radio" value="Dólares" name="Divisa" required /> <span>Dólares</span></label>
+          </div>
+        </div>
+      </div>
+      <div class="question">
+        <p>Aseguramiento <span class="required">*</span></p>
+        <div class="question-answer" id="Propietario">
+          <label><input type="radio" value="Propietario" name="Aseguramiento" required /> <span>Propietario </span></label>
+          <label><input type="radio" value="Arrendador" name="Aseguramiento" required /> <span>Arrendador</span></label>
+          <label><input type="radio" value="Arrendatario" name="Aseguramiento" required /> <span>Arrendatario</span></label>
+        </div>
+      </div>
+      <div class="question">
+        <p>Si el inmueble está situado frente a lago o laguna, indique si la edificación se encuentra </p>
+        <div class="question-answer">
+          <label><input type="radio" value="Ninguno" name="Lago" /> <span>Ninguno</span></label>
+
+          <label><input type="radio" value="Más de 250 metros de la Rivera" name="Lago" /> <span>Más de 250 metros de la Rivera</span></label>
+          <label><input type="radio" value="Menos de 250 metros de la Rivera" name="Lago" /> <span>Menos de 250 metros de la Rivera</span></label>
+
+        </div>
+      </div>
+      <div class="question">
+        <p>Si el inmueble está situado frente al mar, indique si la edificación se encuentra: </p>
+        <div class="question-answer">
+          <label><input type="radio" value="Ninguno" name="Mar" /> <span>Ninguno</span></label>
+          <label><input type="radio" value="Más de 500 metros de la línea de rompimiento de las olas" name="Mar" /> <span>Más de 500 metros de la línea de rompimiento de las olas</span></label>
+          <label><input type="radio" value="Menos de 500 metros de la línea de rompimiento de las olas" name="Mar" /> <span>Menos de 500 metros de la línea de rompimiento de las olas</span></label>
+        </div>
+      </div>
+      <div class="btn-block">
+        <button type="submit" href="/">Enviar</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
