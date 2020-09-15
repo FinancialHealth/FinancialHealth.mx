@@ -90,6 +90,15 @@
       }
     });
   });
+  // external js: isotope.pkgd.js
+
+  $('.grid').isotope({
+    itemSelector: '.grid-item',
+    masonry: {
+      columnWidth: 100
+    }
+  });
+
 
   // jQuery counterUp (used in Whu Us section)
   $('[data-toggle="counter-up"]').counterUp({
@@ -109,15 +118,16 @@
       portfolioIsotope.isotope({ filter: $(this).data('filter') });
     });
   });
+
   // Porfolio isotope and filter
   $(window).on('load', function () {
     var portfolioIsotope = $('.portfolio-container').isotope({
-      itemSelector: '.portfolio-item'
+      itemSelector: '.portfolio-item',
+      filter: '.example'
     });
     $('#portfolio-flters li').on( 'click', function() {
       $("#portfolio-flters li").removeClass('filter-active');
       $(this).addClass('filter-active');
-
       portfolioIsotope.isotope({ filter: $(this).data('filter') });
     });
   });
@@ -197,7 +207,7 @@
         $('.text-light').fadeIn();
       }
     });
-    
+
     function centerModal() {
             $(this).css('display', 'block');
             var $dialog  = $(this).find(".modal-dialog"),
@@ -213,7 +223,6 @@
         $(window).on("resize", function () {
             $('.modal:visible').each(centerModal);
         });
-
 
 
 })(jQuery);
